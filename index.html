@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/dollar.png" type="image/x-icon">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <main>
+        <div class="caixa">
+            <h1>Conversor de Moedas</h1>
+            <div class="conversor">
+                <label for="valor"></label>
+                <input type="number" id="valor" placeholder="Digite o valor">
+
+                <div id="currency-selector" class="currency-dropdown">
+                    <button id="selected-currency-btn" class="selected-option">
+                        <span class="selected-content">
+                            <img id="selected-flag" src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil"
+                                class="flag-icon">
+                            <span id="selected-code">BRL</span>
+                        </span>
+                    </button>
+                    <ul class="options-list">
+                        <li class="currency-option" data-code="BRL" data-flag="https://flagcdn.com/br.svg">
+                            <img src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil" class="flag-icon">
+                            BRL
+                        </li>
+                        <li class="currency-option" data-code="USD" data-flag="https://flagcdn.com/us.svg">
+                            <img src="https://flagcdn.com/us.svg" alt="Bandeira dos EUA" class="flag-icon">
+                            USD
+                        </li>
+                        <li class="currency-option" data-code="EUR" data-flag="https://flagcdn.com/eu.svg">
+                            <img src="https://flagcdn.com/eu.svg" alt="Bandeira da União Europeia" class="flag-icon">
+                            EUR
+                        </li>
+                        <li class="currency-option" data-code="GBP" data-flag="https://flagcdn.com/gb.svg">
+                            <img src="https://flagcdn.com/gb.svg" alt="Bandeira do Reino Unido" class="flag-icon">
+                            GBP
+                        </li>
+                    </ul>
+                </div>
+                <span class="reverse-arrow">
+                    <img src="/assets/reverse-arrow.png" alt="inverter">
+                </span>
+                <div id="currency-selector" class="currency-dropdown">
+                    <button id="selected-currency-btn" class="selected-option">
+                        <span class="selected-content">
+                            <img id="selected-flag" src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil"
+                                class="flag-icon">
+                            <span id="selected-code">BRL</span>
+                        </span>
+                    </button>
+                    <ul class="options-list">
+                        <li class="currency-option" data-code="BRL" data-flag="https://flagcdn.com/br.svg">
+                            <img src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil" class="flag-icon">
+                            BRL
+                        </li>
+                        <li class="currency-option" data-code="USD" data-flag="https://flagcdn.com/us.svg">
+                            <img src="https://flagcdn.com/us.svg" alt="Bandeira dos EUA" class="flag-icon">
+                            USD
+                        </li>
+                        <li class="currency-option" data-code="EUR" data-flag="https://flagcdn.com/eu.svg">
+                            <img src="https://flagcdn.com/eu.svg" alt="Bandeira da União Europeia" class="flag-icon">
+                            EUR
+                        </li>
+                        <li class="currency-option" data-code="GBP" data-flag="https://flagcdn.com/gb.svg">
+                            <img src="https://flagcdn.com/gb.svg" alt="Bandeira do Reino Unido" class="flag-icon">
+                            GBP
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="converterMoeda()">Converter</button>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
